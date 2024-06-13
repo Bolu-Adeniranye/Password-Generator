@@ -74,11 +74,20 @@ button {
     width: 191px;
 }
 
-input {
+.password-box {
+    font-size: 20px;
     background-color: #273549;
-    height: 42px;
+    color: #10B981;
+    height: 20px;
     width: 211px;
 
+    padding: 20px;
     border: none;
     border-radius: 6px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #009f75;
 }

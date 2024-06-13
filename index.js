@@ -4,18 +4,19 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 
 
-const buttonEl = document.getElementById("button-el")
+document.getElementById("button-el").addEventListener("click", function() {
+    const password1 = generatePassword();
+    const password2 = generatePassword();
 
-buttonEl.addEventListener("click", function(){
+    document.getElementById("password1").textContent = password1;
+    document.getElementById("password2").textContent = password2;
+});
 
-})
-
-
-function generatePassword1() {
-let
-}
-
-
-function generatePassword2() {
-
+function generatePassword() {
+    let password = '';
+    for (let i = 0; i < 12; i++) {
+        const randomIndex = Math.floor(Math.random() * characters.length);
+        password += characters[randomIndex];
+    }
+    return password;
 }
